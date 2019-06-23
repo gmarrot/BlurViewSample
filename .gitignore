@@ -1,0 +1,7 @@
+# Visual Studio
+.vs/
+
+# Build
+[Bb]in/
+[Oo]bj/
+[Rr]esource.[Dd]esigner.cs

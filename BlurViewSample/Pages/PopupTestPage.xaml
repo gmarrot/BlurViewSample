@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pagecomponents="clr-namespace:BlurViewSample.Pages.Components"
+    x:Class="BlurViewSample.Pages.PopupTestPage">
+    <StackLayout
+        Spacing="0">
+        <pagecomponents:NavigationBar
+            Title="BlurView Sample App"
+            BackCommand="{Binding BackCommand}" />
+        <pagecomponents:WelcomeView
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand" />
+        <Button
+            Text="Open blurred popup page"
+            Clicked="HandleOnNavigateToBlurPopupPage" />
+        <pagecomponents:FooterLayout />
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:BlurViewSample.Pages.Components"
+    x:Class="BlurViewSample.Pages.Components.NavigationBar"
+    BackgroundColor="#3F51B5"
+    Spacing="0">
+    <local:HeaderLayout />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="44" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="57" />
+            <ColumnDefinition
+                Width="*" />
+            <ColumnDefinition
+                Width="57" />
+        </Grid.ColumnDefinitions>
+        <ContentView
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <ImageButton
+                x:Name="BackButton"
+                BackgroundColor="Transparent"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Padding="0,10"
+                Source="back_button" />
+        </ContentView>
+        <Label
+            x:Name="TitleLabel"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            TextColor="White" />
+    </Grid>
+</StackLayout>

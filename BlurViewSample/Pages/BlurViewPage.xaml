@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:BlurViewSample.Components"
+    xmlns:pagecomponents="clr-namespace:BlurViewSample.Pages.Components"
+    x:Class="BlurViewSample.Pages.BlurViewPage"
+    BackgroundColor="White"
+    Title="BlurView Test">
+    <StackLayout
+        Spacing="0">
+        <pagecomponents:NavigationBar
+            Title="BlurView Sample App"
+            BackCommand="{Binding BackCommand}" />
+        <AbsoluteLayout
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <pagecomponents:WelcomeView
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All" />
+            <components:BlurView
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="#99000000" />
+        </AbsoluteLayout>
+    </StackLayout>
+</ContentPage>

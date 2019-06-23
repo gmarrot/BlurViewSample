@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pagecomponents="clr-namespace:BlurViewSample.Pages.Components"
+    x:Class="BlurViewSample.Pages.MainPage"
+    BackgroundColor="White">
+    <StackLayout
+        Spacing="0">
+        <pagecomponents:NavigationBar
+            Title="BlurView Sample App" />
+        <StackLayout
+            Padding="15"
+            Spacing="10">
+            <Button
+                Text="Page with blur view"
+                Clicked="HandleOnNavigateToBlurViewPage" />
+            <Button
+                Text="Modal page with blur view"
+                Clicked="HandleOnNavigateToModalBlurViewPage" />
+            <Button
+                Text="Popup page with blur view"
+                Clicked="HandleOnNavigateToPopupBlurViewPage" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<popuppages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:components="clr-namespace:BlurViewSample.Components"
+    xmlns:pagecomponents="clr-namespace:BlurViewSample.Pages.Components"
+    xmlns:popuppages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    x:Class="BlurViewSample.Pages.PopupPage">
+    <StackLayout
+        Spacing="0">
+        <pagecomponents:NavigationBar
+            BackgroundColor="Transparent"
+            Title="BlurView Sample App"
+            BackCommand="{Binding BackCommand}" />
+        <AbsoluteLayout
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <components:BlurView
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All" />
+            <ContentView
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All">
+                <Label
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    TextColor="White"
+                    Text="Test" />
+            </ContentView>
+        </AbsoluteLayout>
+    </StackLayout>
+</popuppages:PopupPage>
